@@ -13,6 +13,7 @@ const { Book } = require('./models/book');
 const { auth } = require('./middleware/auth')
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(express.static('client/build'))
 
 
 // GET //
